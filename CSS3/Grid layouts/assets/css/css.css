@@ -1,0 +1,111 @@
+hr {
+    margin: 30px 0;
+}
+
+.container-1,
+.container-1-2,
+.container-2 {
+    border: solid 1px #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+} 
+
+.container-1 {
+    display: grid;
+} 
+
+.container-1-2 {
+    display: inline-grid;
+} 
+
+.container-2 {
+    display: grid;
+
+    grid-template-columns: 200px 200px 200px;
+
+    /* Neste caso ele atribuiu auto um linha para o item-1 */
+    grid-template-rows: 200px 200px;
+} 
+
+.container-3 {
+    height: 400px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 2fr 1fr;
+
+    /* Caso não tenha um height definido, não haverá
+     * referência para o calculo das frações */
+    grid-template-rows: 1fr 2fr 1fr;    
+}
+
+.container-3-1 {
+    height: 400px;
+
+    display: grid;
+
+    grid-template-columns: 1fr repeat(2, 1fr);
+
+    /* Caso não tenha um height definido, não haverá
+     * referência para o calculo das frações */
+    grid-template-rows: repeat(2, 1fr);    
+}
+
+.container-3-2 {
+    height: 400px;
+
+    display: grid;
+
+    /* O auto vai completar os espaços na proporção do conteúdo */
+    grid-template-columns: min-content max-content auto auto;
+
+    /* Se usado com o 1fr o 1fr tem prioridade
+     * e o auto vai se comportar como o min-content */
+    grid-template-rows: auto 1fr;
+}
+
+
+
+.item {
+    border: solid 1px #a9a9a9;
+    background: #ccc;
+}
+
+.item {
+    border: solid 1px #a9a9a9;
+    background: #ccc;
+}
+ 
+.item-1 {
+    background-color: #E97777;
+} 
+ 
+.item-2 {
+    background-color: #FFFAD7;
+} 
+ 
+.item-3 {
+    background-color: #FF9F9F;
+} 
+ 
+.item-4 {
+    background-color: #FCDDB0;
+} 
+ 
+.item-4 {
+    background-color: #BCE29E;
+} 
+ 
+.item-6 {
+    background-color: #FF8DC7;
+} 
+ 
+.item-7 {
+    background-color: #B1AFFF;
+} 
+
+/* =================================== */
+
+
+
+/* =================================== */
