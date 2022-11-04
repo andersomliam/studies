@@ -21,4 +21,4 @@ const DistanciaKm = 700;
 const litrosConsumidos = DistanciaKm / kmPorLitro;
 const valorGasto = litrosConsumidos * precoGasolina;
 
-console.log('Gasto de combustivel em uma viagem: r$ ' + valorGasto.toFixed(2));
+console.log('Gasto de combustivel em uma viagem: r$ ' + valorGasto.toFixed(2)); 
