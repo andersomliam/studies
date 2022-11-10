@@ -51,7 +51,7 @@ function calcularSalario() {
     return salario - valorImporto + beneficio;
 }
 
-const aliquotaImposto = pegarAliquota(salario); 
+const aliquotaImposto = pegarAliquota(salario);
 const valorImporto = calcularPorcentagem(salario, aliquotaImposto);
 
 
