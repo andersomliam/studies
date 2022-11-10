@@ -1,11 +1,11 @@
-const entrada = [-5.5];
+const entrada = [5.5];
 
 let i = 0;
 
-function gets() {
+function gets(entrada) {
     const valor = entrada[i];
     i++;
-    return valor;
+    return entrada;
 }
 
 function print(text) {
