@@ -50,5 +50,3 @@ print('beneficio: ' + beneficio);
 print('desconto: ' + desconto);
 print('salario - desconto: ' + (salario - desconto));
 print('salarioPagar: ' + salarioPagar);
-
-//print(gets());
