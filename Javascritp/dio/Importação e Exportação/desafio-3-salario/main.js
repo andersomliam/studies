@@ -28,9 +28,41 @@ const salario = gets();
 const beneficio = gets();
 let desconto = 0;
 let salarioPagar = 0;
+let valor = 0;
+let percentual = 0;
+
+/** Retorna o percentual que será usado no calculo do salário */
+function calcularPorcentagem(valor, percentual) {
+    return valor * (percentual / 100);
+}
+
+/** Retorna o percentual que será usado no calculo do salário. */
+function pegarAliquota(salario) {
+    if (salario <= 1100) {
+        return 5;
+    } else if (salario > 1100 && salario <= 2500) {
+        return 10;
+    } else {
+        return 15;
+    }
+}
+
+function calcularSalario() {
+    return salario - valorImporto + beneficio;
+}
+
+const aliquotaImposto = pegarAliquota(salario); 
+const valorImporto = calcularPorcentagem(salario, aliquotaImposto);
 
 
+print('salario: ' + salario);
+print('beneficio: ' + beneficio);
+print('aliquotaImposto: ' + aliquotaImposto);
+print('valorImporto: ' + valorImporto);
+print('salarioPagar: ' + calcularSalario());
 
+
+/* Minha resolução
 if (salario <= 1100) {
   desconto = (salario * 5.0) / 100;
   salarioPagar = (salario - desconto) + beneficio;
@@ -43,10 +75,10 @@ if (salario <= 1100) {
   desconto = (salario * 15.0) / 100;
   salarioPagar = (salario - desconto) + beneficio;
 
-}
+} 
 
 print('salario: ' + salario);
 print('beneficio: ' + beneficio);
 print('desconto: ' + desconto);
 print('salario - desconto: ' + (salario - desconto));
-print('salarioPagar: ' + salarioPagar);
+print('salarioPagar: ' + salarioPagar); */
