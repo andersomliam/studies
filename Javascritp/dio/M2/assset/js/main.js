@@ -32,17 +32,16 @@
 
 function convertPokemonToLi(pokemon) {
     return `
-    <li class="pokemon">
-        <span class="number">#122</span>
+    <li class="pokemon ${pokemon.type}">
+        <span class="number">#${pokemon.number}</span>
         <span class="name">${pokemon.name}</span>
 
         <div class="detail">
             <ol class="types">
-                <li class="type">Psychic</li>
-                <li class="type">Fairy</li>
+                ${pokemon.types.map((type) => `<li class="type ${type}" >${type}</li>`).join('')}
             </ol>
 
-            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/122.svg"
+            <img src="${pokemon.photo}"
                 alt="${pokemon.name}">
         </div>
     </li>    
