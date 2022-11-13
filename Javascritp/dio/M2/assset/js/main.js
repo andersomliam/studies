@@ -30,6 +30,12 @@
     })
  */
 
+const pokemonList = document.getElementById('pokemonsList')
+const loadMoreButton = document.getElementById('loadMoreButton')
+const limit = 10
+let offset = 0
+
+/* Substituido essa função e passado o HTML para o map da função abaixo
 function convertPokemonToLi(pokemon) {
     return `
     <li class="pokemon ${pokemon.type}">
@@ -46,9 +52,8 @@ function convertPokemonToLi(pokemon) {
         </div>
     </li>    
     `
-}
+} */
 
-const pokemonList = document.getElementById('pokemonsList')
 // pokemonList.innerHTML += '<li>Anderson teste</li>'
 
 /** REFATORADO O CÓDIGO USANDO A FUNÇÃO MAP
@@ -66,6 +71,32 @@ pokeApi.getPokemons().then((pokemons) => {
         }
     })*/
 
-pokeApi.getPokemons().then((pokemons = []) => {
-    pokemonList.innerHTML += pokemons.map(convertPokemonToLi).join('')
+function loadPokemonItens(offset, limit) {
+    pokeApi.getPokemons(offset, limit).then((pokemons = []) => {
+        pokemonList.innerHTML += pokemons.map((pokemon) => 
+            `
+            <li class="pokemon ${pokemon.type}">
+                <span class="number">#${pokemon.number}</span>
+                <span class="name">${pokemon.name}</span>
+
+                <div class="detail">
+                    <ol class="types">
+                        ${pokemon.types.map((type) => `<li class="type ${type}" >${type}</li>`).join('')}
+                    </ol>
+
+                    <img src="${pokemon.photo}"
+                        alt="${pokemon.name}">
+                </div>
+            </li>    
+            `
+        ).join('')
+    })    
+}
+
+loadPokemonItens(offset, limit)
+
+loadMoreButton.addEventListener('click', () => {
+    offset += limit
+    loadPokemonItens(offset, limit)
 })
+
