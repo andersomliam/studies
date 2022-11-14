@@ -10,5 +10,7 @@ Estudos HTML5, CSS3 e Javascript
 
 ## Atalhos VSCode
 -[windows](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf)
+
 -[linux](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf)
+
 -[mac](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf)
