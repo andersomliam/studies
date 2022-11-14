@@ -9,8 +9,6 @@ Estudos HTML5, CSS3 e Javascript
   - git config --global user.name "Your Name"
 
 ## Atalhos VSCode
--[windows](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf)
-
--[linux](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf)
-
--[mac](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf)
+- [windows](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf)
+- [linux](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf)
+- [mac](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf)
