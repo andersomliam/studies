@@ -32,7 +32,9 @@
 
 const pokemonList = document.getElementById('pokemonsList')
 const loadMoreButton = document.getElementById('loadMoreButton')
-const limit = 10
+
+const maxRecords = 151
+const limit = 12
 let offset = 0
 
 /* Substituido essa função e passado o HTML para o map da função abaixo
@@ -97,6 +99,15 @@ loadPokemonItens(offset, limit)
 
 loadMoreButton.addEventListener('click', () => {
     offset += limit
-    loadPokemonItens(offset, limit)
+    const qtdeRecordNextPage = offset + limit
+
+    if (qtdeRecordNextPage >= maxRecords) {
+        const newLimit = maxRecords - offset
+        loadPokemonItens(offset, newLimit)
+        loadMoreButton.parentElement.removeChild(loadMoreButton)
+    } else {
+        loadPokemonItens(offset, limit)
+    }
+
 })
 
