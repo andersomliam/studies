@@ -7,3 +7,9 @@ Estudos HTML5, CSS3 e Javascript
 3. Configurar 
   - git config --global user.email "you@example.com"
   - git config --global user.name "Your Name"
+
+Documentação oficial
+
+windows
+mac
+[linux] https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf
