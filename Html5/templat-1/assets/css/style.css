@@ -1,0 +1,219 @@
+body, h1, p{
+    margin: 0;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* grid-template-rows: repeat(8, 200px); */
+    /* grid-auto-rows: auto; */
+
+    grid-template-areas:
+        'header'
+        'main'
+        'footer';
+}
+
+header {
+    background-color: #2e3138;
+
+    /* property item */
+    grid-area: header;
+
+    /* porperty contant */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+
+    grid-template-areas:
+        'nav'
+        'slide';
+}
+
+header nav {
+    background-color: aqua;
+
+    /* property item */
+    grid-area: nav;
+
+    /* porperty contant */
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: repeat(1, 80px);
+
+    grid-template-areas: 'logo menubar social';
+}
+
+header nav .logo {
+    background-color: #e8e8e8;
+    grid-area: logo;
+}
+
+header nav .menubar {
+    background-color: #f4f4f2;
+    grid-area: menubar;
+}
+
+header nav .social {
+    background-color: #e8e8e8;
+    grid-area: social;
+}
+
+header .slide div {
+    background-color: #bbbfca;
+
+    /* property item */
+    grid-area: slide;
+
+    /* porperty contant */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1, 400px);
+}
+
+main {
+    background-color: #15181e;
+
+    /* property item */
+    grid-area: main;
+
+    /* porperty contant */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas:
+        'skills'
+        'portfolio'
+        'skill-rank'
+        'team'
+        'testimony';
+}
+
+main .skills {
+    background-color: #f4f4f2;
+
+    /* property item */
+    grid-area: skills;
+}
+
+main .portfolio {
+    background-color: #bbbfca;
+
+    /* property item */
+    grid-area: portfolio;
+
+    /* porperty contant */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, auto);   
+    grid-template-areas:
+    "title title title title"
+    "pa pa pa pa"
+    "portfolios portfolios portfolios portfolios";
+
+}
+
+main .portfolio h1 {
+    background-color: blueviolet;
+    /* property item */
+    grid-area: title;    
+}
+
+main .portfolio p {
+    background-color: rgb(0, 110, 255);
+    /* property item */
+    grid-area: pa;    
+}
+
+main .portfolio .portfolios {
+    background-color: rgb(255, 102, 0);
+
+    /* property item */
+    grid-area: portfolios;
+
+    /* porperty contant */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 100px);   
+/*     grid-template-areas:
+    "title title title title"
+    "portfolios portfolios portfolios portfolios";  */   
+}
+
+main .portfolio .portfolios div{
+    border: #15181e solid 1px;
+
+}
+
+
+main .skill-rank {
+    background-color: #f4f4f2;
+
+    /* property item */
+    grid-area: skill-rank;
+}
+
+main .team {
+    background-color: #bbbfca;
+
+    /* property item */
+    grid-area: team;
+}
+
+main .testimony {
+    background-color: #f4f4f2;
+
+    /* property item */
+    grid-area: testimony;
+}
+
+footer {
+    background-color: #202327;
+
+    /* property item */
+    grid-area: footer;
+
+    /* porperty contant */
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+        'footer-1 footer-2 footer-3'
+        'direitos direitos direitos';
+}
+
+footer .footer-1 {
+    background-color: aquamarine;
+
+    /* property item */
+    grid-area: footer-1;
+
+    /* porperty contant */
+    display: grid;
+    grid-template-rows: repeat(1, 100px);
+}
+
+footer .footer-2 {
+    background-color: aquamarine;
+    /* property item */
+    grid-area: footer-2;
+
+    /* porperty contant */
+    display: grid;
+    grid-template-rows: repeat(1, 100px);
+}
+
+footer .footer-3 {
+    background-color: aquamarine;
+    /* property item */
+    grid-area: footer-3;
+
+    /* porperty contant */
+    display: grid;
+    grid-template-rows: repeat(1, 100px);
+}
+
+footer .direitos {
+    background-color: darkseagreen;
+    grid-area: direitos;
+}
