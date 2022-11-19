@@ -4,12 +4,12 @@
     font-family: 'Roboto', sans-serif;
     list-style: none;
     box-sizing: border-box;
-}
-
-ol,
-ul {
     padding: 0;
     margin: 0;
+}
+
+a {
+    text-decoration: none;
 }
 
 body {
