@@ -1,6 +1,5 @@
-function SeuNome(setNome) {
+function SeuNome({setNome}) {
 
-    
     return (
         <div>
             <p>Digite seu nome: </p>

@@ -1,0 +1,13 @@
+.navList {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.navList li {
+    padding: 1rem;
+}
+
+a {
+    color: #ccc;
+}
