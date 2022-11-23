@@ -1,3 +1,6 @@
+// State List
+import {useState} from 'react'
+
 import './App.css';
 import HelloWorld from './components/HelloWorld';
 import Frases from './components/Frases';
@@ -9,8 +12,14 @@ import Form from './components/Form';
 import Form2 from './components/Form2';
 import Evento2 from './components/Evento2';
 import Condicional from './components/Condicional';
+import SeuNome from './components/14-StateList/SeuNome';
+import { useState } from 'react';
 
 function App() {
+
+  // State List
+  const [nome, setNome] = useState()
+  
 
   const name = "Lima Andersom"
   const newName = name.toUpperCase();
@@ -63,7 +72,13 @@ function App() {
       <Evento2 />
 
       <hr></hr>
+      <h2>Rederrização Condicional</h2>
       <Condicional />
+
+      <hr></hr>
+      <h2>#14 State Lift</h2>
+      <SeuNome setNome={setNome} />
+      {nome}
     </div>
   );
 }

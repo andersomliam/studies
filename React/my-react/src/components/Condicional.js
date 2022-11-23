@@ -17,7 +17,6 @@ function Condicional() {
 
     return (
         <div>
-            <h2>Rederrização Condicional</h2>
             <h3>Cadastre seu e-mail:</h3>
             <form>
                 <input 
