@@ -11,7 +11,7 @@ function calcularImposto(salario) {
     } else {
         aliquota = 0.15;
     }
-    //TODO Criar as demais condições para as aliquotas de 10.00% e 15.00%.
+    // Criar as demais condições para as aliquotas de 10.00% e 15.00%.
     return aliquota * salario;
 }
 
