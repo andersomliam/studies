@@ -1,5 +1,5 @@
 # studies
-Estudos HTML5, CSS3 e Javascript
+Estudos HTML5, CSS3, Javascript, Ract e Node.js, API Restful.
 
 ## Configurando o git no ambiente.
 1. Configurar as chaves ssh
