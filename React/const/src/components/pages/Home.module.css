@@ -1,0 +1,34 @@
+.home_container {
+    width: 100%;
+    padding: 4em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+
+.home_container h1 {
+    font-size: 2.5em;
+    /* margin-bottom: .5em; */
+}
+
+.home_container h1 span {
+    color: #fb3;
+    padding: 0 .2em;
+    border-radius: 1rem;
+    background-color: #222;
+}
+
+.home_container h1 span sup {
+    font-size: .6em;
+}
+
+.home_container p {
+    color: #7b7b7b;
+}
+
+.home_container img {
+    width: 350px;
+}

@@ -20,13 +20,13 @@
 
     text-decoration: none;
 
-    padding: 0 1em;
+    padding: .3em .9em;
 
 }
 
 .navbar ul li a:hover{
     color: #222;
     background-color: #fb3;
-    padding: 1em;
+    padding: .3em .9em;
     border-radius: 1rem;
 }
