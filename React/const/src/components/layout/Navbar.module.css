@@ -21,6 +21,9 @@
     text-decoration: none;
 
     padding: .3em .9em;
+    border-radius: 1rem;
+
+    transition: .3s;
 
 }
 
