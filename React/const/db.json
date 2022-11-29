@@ -12,17 +12,6 @@
       "id": 1
     },
     {
-      "name": "Davi",
-      "budget": "8700",
-      "category": {
-        "id": "3",
-        "name": "Design"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 2
-    },
-    {
       "name": "Front end",
       "budget": "9090",
       "category": {
@@ -32,17 +21,6 @@
       "cost": 0,
       "services": [],
       "id": 3
-    },
-    {
-      "name": "Anderson Lima",
-      "budget": "6500",
-      "category": {
-        "id": "4",
-        "name": "Planejamento"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 4
     },
     {
       "name": "Site",
