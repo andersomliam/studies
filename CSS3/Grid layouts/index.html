@@ -1,92 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grid Layouts no CSS</title>      
-    <link rel="stylesheet" href="./assets/css/css.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
 
-    <h2><code>display: grid;</code></h2>
+    <link rel="stylesheet" href="./assets/css/css.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/studies/CSS3/Grid layouts/page2.html" aria-current="page">Page2</a>
+      <a href="/studies/CSS3/Grid layouts/page3.html" aria-current="page">Page3</a>
+    </nav>
+
+    <h2><code>AULA 1 - display: grid;</code></h2>
     <div class="container-1">
-        <div class="item">Item-1</div>
-        <div class="item">Item-2</div>
-        <div class="item">Item-3</div>
+      <div class="item">Item-1</div>
+      <div class="item">Item-2</div>
+      <div class="item">Item-3</div>
     </div>
 
     <div class="container-1">
-        <div class="item">Item-1</div>
-        <div class="item">Item-2</div>
-        <div class="item">Item-3</div>
+      <div class="item">Item-1</div>
+      <div class="item">Item-2</div>
+      <div class="item">Item-3</div>
     </div>
 
-    <h2><code>display: inline-grid;</code></h2>
+    <h2><code>AULA 1 - display: inline-grid;</code></h2>
     <div class="container-1-2">
-        <div class="item">Item-1</div>
-        <div class="item">Item-2</div>
-        <div class="item">Item-3</div>
+      <div class="item">Item-1</div>
+      <div class="item">Item-2</div>
+      <div class="item">Item-3</div>
     </div>
 
     <div class="container-1-2">
-        <div class="item">Item-1</div>
-        <div class="item">Item-2</div>
-        <div class="item">Item-3</div>
-    </div>    
+      <div class="item">Item-1</div>
+      <div class="item">Item-2</div>
+      <div class="item">Item-3</div>
+    </div>
 
+    <hr />
 
-    <hr>
-
-    <h2><code>display: grid; columns, row</code></h2>
+    <h2><code>AULA 2 - display: grid; columns, row</code></h2>
     <div class="container-2">
-        <div class="item item-1">Item-1</div>
-        <div class="item item-2">Item-2</div>
-        <div class="item item-3">Item-3</div>
-        <div class="item item-4">Item-4</div>
-        <div class="item item-5">Item-5</div>
-        <div class="item item-6">Item-6</div>
-        <div class="item item-7">Item-7</div>
-    </div>  
-
-    <hr>
-
-    <h2><code>display: grid; unidade de medida 1fr (uma fração do espado)</code></h2>
-    <div class="container-3">
-        <div class="item item-1">Item-1</div>
-        <div class="item item-2">Item-2</div>
-        <div class="item item-3">Item-3</div>
-        <div class="item item-4">Item-4</div>
-        <div class="item item-5">Item-5</div>
-        <div class="item item-6">Item-6</div>
-        <div class="item item-7">Item-7</div>
-    </div>  
-
-    <hr>
-
-    <h2><code>display: grid; 1fr repet</code></h2>
-    <div class="container-3-1">
-        <div class="item item-1">Item-1</div>
-        <div class="item item-2">Item-2</div>
-        <div class="item item-3">Item-3</div>
-        <div class="item item-4">Item-4</div>
-        <div class="item item-5">Item-5</div>
-        <div class="item item-6">Item-6</div>
-        <div class="item item-7">Item-7</div>
+      <div class="item item-1">Item-1</div>
+      <div class="item item-2">Item-2</div>
+      <div class="item item-3">Item-3</div>
+      <div class="item item-4">Item-4</div>
+      <div class="item item-5">Item-5</div>
+      <div class="item item-6">Item-6</div>
+      <div class="item item-7">Item-7</div>
     </div>
-    
-    <hr>
 
-    <h2><code>display: grid; min-content , max-content and auto</code></h2>
-    <div id="#container-3-2" class="container-3-2">
-        <div class="item item-1">Anderson Martins de Lima</div>
-        <div class="item item-2">Anderson Martins de Lima</div>
-        <div class="item item-3">Anderson Lima</div>
-        <div class="item item-4">Lima</div>
-        <div class="item item-5">Item-5</div>
-        <div class="item item-6">Item-6</div>
-        <div class="item item-7">Item-7</div>
-    </div>      
+    <h2>
+      <code
+        >AULA 2 - display: grid; unidade de medida 1fr (uma fração do
+        espado)</code
+      >
+    </h2>
+    <div class="container-2-1">
+      <div class="item item-1">Item-1</div>
+      <div class="item item-2">Item-2</div>
+      <div class="item item-3">Item-3</div>
+      <div class="item item-4">Item-4</div>
+      <div class="item item-5">Item-5</div>
+      <div class="item item-6">Item-6</div>
+      <div class="item item-7">Item-7</div>
+    </div>
 
-</body>
+    <h2><code>AULA 2 - display: grid; 1fr repet</code></h2>
+    <div class="container-2-2">
+      <div class="item item-1">Item-1</div>
+      <div class="item item-2">Item-2</div>
+      <div class="item item-3">Item-3</div>
+      <div class="item item-4">Item-4</div>
+      <div class="item item-5">Item-5</div>
+      <div class="item item-6">Item-6</div>
+      <div class="item item-7">Item-7</div>
+    </div>
+
+    <h2>
+      <code>AULA 2 - display: grid; min-content , max-content and auto</code>
+    </h2>
+    <div class="container-2-3">
+      <div class="item item-1">Anderson Martins de Lima</div>
+      <div class="item item-2">Anderson Martins de Lima</div>
+      <div class="item item-3">Anderson Lima</div>
+      <div class="item item-4">Lima</div>
+      <div class="item item-5">Item-5</div>
+      <div class="item item-6">Item-6</div>
+      <div class="item item-7">Item-7</div>
+    </div>
+
+    <hr />
+
+    <h2>Grid implícito e explícito</h2>
+    <h3><code>AULA 3 - display: grid; grid-auto-rows: 100px;</code></h3>
+    <div class="container-3">
+      <div class="item item-1">Anderson Martins de Lima</div>
+      <div class="item item-2">Anderson Martins de Lima</div>
+      <div class="item item-3">Anderson Lima</div>
+      <div class="item item-4">Lima</div>
+      <div class="item item-5">Item-5</div>
+      <div class="item item-6">Item-6</div>
+      <div class="item item-7">Item-7</div>
+      <div class="item item-7">Item-8</div>
+      <div class="item item-7">Item-9</div>
+      <div class="item item-7">Item-10</div>
+    </div>
+
+    <h3><code>AULA 3 - display: grid; grid-auto-flow: column;</code></h3>
+    <div class="container-3-1">
+      <div class="item item-1">Anderson Martins de Lima</div>
+      <div class="item item-2">Anderson Martins de Lima</div>
+      <div class="item item-3">Anderson Lima</div>
+      <div class="item item-4">Lima</div>
+      <div class="item item-5">Item-5</div>
+      <div class="item item-6">Item-6</div>
+      <div class="item item-7">Item-7</div>
+      <div class="item item-7">Item-8</div>
+      <div class="item item-7">Item-9</div>
+      <div class="item item-7">Item-10</div>
+    </div>
+
+    <hr />
+  </body>
 </html>

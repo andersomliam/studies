@@ -1,0 +1,270 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* container */
+  display: grid;
+  grid-template:
+    'header' auto
+    'main' auto
+    'footer' 200px
+    / 1fr;
+}
+
+header {
+  /* Itens */
+
+  /* property item */
+  grid-area: header;
+
+  display: grid;
+  grid-template:
+    'menubar' 80px
+    'slide' 200px
+    / 1fr;
+}
+
+main {
+  /* property item */
+  grid-area: main;
+
+  display: grid;
+  grid-template:
+    'skills'
+    'portfolio'
+    'skill-rank'
+    'team'
+    'testimony'
+    / 1fr;
+}
+
+main section {
+  display: grid;
+  grid-template:
+    'title title title title'
+    'subtitle subtitle subtitle subtitle'
+    'content content content content'
+    / 1fr 1fr 1fr 1fr;
+}
+
+main .skills {
+  background-color: #f4f4f2;
+
+  /* property item */
+  grid-area: skills;
+}
+
+main .portfolio {
+  background-color: #f4f4f2;
+
+  /* property item */
+  grid-area: portfolio;
+}
+
+main .portfolio h2 {
+  background-color: #aaa;
+
+  grid-area: title;
+}
+
+main .portfolio p {
+  background-color: #fff;
+
+  grid-area: subtitle;
+}
+
+main .portfolio article {
+  background-color: #ccc;
+
+  grid-area: content;
+
+  display: grid;
+  grid-template:
+    'port-item-1 port-item-2 port-item-3 port-item-4' 100px
+    'port-item-5 port-item-6 port-item-7 port-item-8' 100px;
+}
+
+main .portfolio article .port-item-1 {
+  background-color: #f4f4f2;
+
+  /* property item */
+  grid-area: port-item-1;
+}
+main .portfolio article .port-item-2 {
+  background-color: #bbbfca;
+
+  /* property item */
+  grid-area: port-item-2;
+}
+main .portfolio article .port-item-3 {
+  background-color: #f4f4f2;
+
+  /* property item */
+  grid-area: port-item-3;
+}
+main .portfolio article .port-item-4 {
+  background-color: #bbbfca;
+
+  /* property item */
+  grid-area: port-item-4;
+}
+main .portfolio article .port-item-5 {
+  background-color: #bbbfca;
+
+  /* property item */
+  grid-area: port-item-5;
+}
+main .portfolio article .port-item-6 {
+  background-color: #f4f4f2;
+
+  /* property item */
+  grid-area: port-item-6;
+}
+main .portfolio article .port-item-7 {
+  background-color: #bbbfca;
+
+  /* property item */
+  grid-area: port-item-7;
+}
+main .portfolio article .port-item-8 {
+  background-color: #f4f4f2;
+
+  /* property item */
+  grid-area: port-item-8;
+}
+
+main .skill-rank {
+  background-color: #f4f4f2;
+
+  /* property item */
+  grid-area: skill-rank;
+}
+
+main .skill-rank h2 {
+  background-color: #aaa;
+
+  /* property item */
+  grid-area: title;
+}
+
+main .skill-rank p {
+  background-color: #fff;
+
+  /* property item */
+  grid-area: subtitle;
+}
+
+main .skill-rank article {
+  background-color: #bbbfca;
+
+  /* property item */
+  grid-area: content;
+
+  display: grid;
+  grid-template:
+    'sr-item-1 sr-item-1' 200px
+    / 1fr 1fr;
+}
+
+main .team {
+  background-color: #ccc;
+
+  /* property item */
+  grid-area: team;
+}
+
+main .testimony {
+  background-color: #f4f4f2;
+
+  /* property item */
+  grid-area: testimony;
+}
+
+footer {
+  background-color: #ccc;
+
+  /* property item */
+  grid-area: footer;
+
+  display: grid;
+  grid-template:
+    'footer-1 footer-2 footer-3'
+    'direitos direitos direitos'
+    / 1fr 3fr 1fr;
+}
+
+/* ITENS HEADER =================================== */
+
+header nav {
+  grid-area: menubar;
+
+  display: grid;
+  grid-template:
+    'logo menubar social'
+    / 1fr 3fr 1fr;
+}
+
+header nav .logo {
+  background-color: #aaa;
+
+  grid-area: logo;
+}
+
+header nav .menubar {
+  grid-area: menubar;
+}
+
+header nav .social {
+  background-color: #aaa;
+
+  grid-area: social;
+}
+
+header section {
+  grid-area: slide;
+
+  display: grid;
+  grid-template:
+    'slide'
+    / 1fr;
+}
+
+header section .slide {
+  background-color: #ccc;
+
+  grid-area: slide;
+}
+
+/* ITENS PORTFOLIO =================================== */
+
+main .portfolio {
+}
+
+/* ITENS FOOTER =================================== */
+
+footer .footer-1 {
+  background-color: #aaa;
+
+  grid-area: footer-1;
+}
+
+footer .footer-2 {
+  background-color: #ccc;
+
+  grid-area: footer-2;
+}
+
+footer .footer-3 {
+  background-color: #aaa;
+
+  grid-area: footer-3;
+}
+
+footer .direitos {
+  background-color: #666;
+
+  grid-area: direitos;
+}

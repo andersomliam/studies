@@ -1,111 +1,128 @@
 hr {
-    margin: 30px 0;
+  margin: 30px 0;
 }
 
 .container-1,
 .container-1-2,
 .container-2 {
-    border: solid 1px #ccc;
-    padding: 10px;
-    margin-bottom: 20px;
-} 
+  border: solid 1px #cccccc;
+  padding: 10px;
+  margin-bottom: 20px;
+}
 
 .container-1 {
-    display: grid;
-} 
+  display: grid;
+}
 
 .container-1-2 {
-    display: inline-grid;
-} 
+  display: inline-grid;
+}
 
+/* AULA 2 - display: grid; columns, row */
 .container-2 {
-    display: grid;
+  display: grid;
 
-    grid-template-columns: 200px 200px 200px;
+  grid-template-columns: 200px 200px 200px;
 
-    /* Neste caso ele atribuiu auto um linha para o item-1 */
-    grid-template-rows: 200px 200px;
-} 
+  /* Neste caso ele atribuiu auto um linha para o item-7 */
+  grid-template-rows: 200px 200px;
+}
+
+/* AULA 2 - display: grid; unidade de medida 1fr (uma fração do espado) */
+.container-2-1 {
+  height: 400px;
+
+  display: grid;
+
+  grid-template-columns: 1fr 2fr 1fr;
+
+  /* Caso não tenha um height definido, não haverá
+     * referência para o calculo das frações */
+  grid-template-rows: 1fr 2fr 1fr;
+}
+
+/* AULA 2 - display: grid; 1fr repet */
+.container-2-2 {
+  height: 400px;
+
+  display: grid;
+
+  /* grid-template-columns: 1fr repeat(2, 1fr); */
+  /* grid-template-columns: repeat(2, 2.5fr 0.5fr); */
+
+  /* auto-fill => aloca o espado mesmo se nao houver o elemento, auto-fit => nao aloca */
+  grid-template-columns: repeat(auto-fit, 100px);
+
+  /* Caso não tenha um height definido, não haverá
+   * referência para o calculo das frações */
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.container-2-3 {
+  height: 400px;
+
+  display: grid;
+
+  /* O auto vai completar os espaços na proporção do conteúdo */
+  grid-template-columns: min-content max-content auto auto;
+
+  /* Se usado com o 1fr o 1fr tem prioridade
+   * e o auto vai se comportar como o min-content */
+  grid-template-rows: auto 1fr;
+}
 
 .container-3 {
-    height: 400px;
+  height: 400px;
 
-    display: grid;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
 
-    grid-template-columns: 1fr 2fr 1fr;
-
-    /* Caso não tenha um height definido, não haverá
-     * referência para o calculo das frações */
-    grid-template-rows: 1fr 2fr 1fr;    
+  /* Aplicado na criação de linhas automaticas 
+   * O padrão é alocar linhas
+   * Ele usa o heigth como base de calculo */
+  grid-auto-rows: 100px;
 }
 
 .container-3-1 {
-    height: 400px;
+  height: 400px;
 
-    display: grid;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
 
-    grid-template-columns: 1fr repeat(2, 1fr);
+  /* Aplicado na criação de linhas automaticas 
+    * Ele usa o heigth como base de calculo 
+    * O padrão é alocar linhas, caso queira colunas... */
+  grid-auto-flow: column;
+  grid-auto-columns: 100px;
 
-    /* Caso não tenha um height definido, não haverá
-     * referência para o calculo das frações */
-    grid-template-rows: repeat(2, 1fr);    
-}
-
-.container-3-2 {
-    height: 400px;
-
-    display: grid;
-
-    /* O auto vai completar os espaços na proporção do conteúdo */
-    grid-template-columns: min-content max-content auto auto;
-
-    /* Se usado com o 1fr o 1fr tem prioridade
-     * e o auto vai se comportar como o min-content */
-    grid-template-rows: auto 1fr;
-}
-
-
-
-.item {
-    border: solid 1px #a9a9a9;
-    background: #ccc;
+  /* Alinha de forma aleatória */
+  /* grid-auto-flow: dense; */
 }
 
 .item {
-    border: solid 1px #a9a9a9;
-    background: #ccc;
+  border: solid 1px #000000;
+  background: #ccc;
 }
- 
 .item-1 {
-    background-color: #E97777;
-} 
- 
+  background-color: #e97777;
+}
 .item-2 {
-    background-color: #FFFAD7;
-} 
- 
+  background-color: #fffad7;
+}
 .item-3 {
-    background-color: #FF9F9F;
-} 
- 
+  background-color: #ff9f9f;
+}
 .item-4 {
-    background-color: #FCDDB0;
-} 
- 
+  background-color: #fcddb0;
+}
 .item-4 {
-    background-color: #BCE29E;
-} 
- 
+  background-color: #bce29e;
+}
 .item-6 {
-    background-color: #FF8DC7;
-} 
- 
+  background-color: #ff8dc7;
+}
 .item-7 {
-    background-color: #B1AFFF;
-} 
-
-/* =================================== */
-
-
-
-/* =================================== */
+  background-color: #b1afff;
+}
