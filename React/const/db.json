@@ -2,6 +2,36 @@
   "projects": [
     {
       "name": "Anderson Lima",
+      "budget": "5001",
+      "category": {
+        "id": "1",
+        "name": "Infra"
+      },
+      "cost": 1550,
+      "services": [
+        {
+          "name": "Anderson Lima",
+          "cost": "550",
+          "description": "Descrição",
+          "id": "a3d80408-fee2-4e01-ba27-dc9b7118cb94"
+        },
+        {
+          "name": "Anderson Lima",
+          "cost": "550",
+          "description": "Descrição",
+          "id": "a3d80408-fee2-4e01-ba27-dc9b7118cb94"
+        },
+        {
+          "name": "Freelancer",
+          "cost": "450",
+          "description": "CSS",
+          "id": "7d7a6991-a17b-467d-bedf-3928a7fccf6a"
+        }
+      ],
+      "id": 1
+    },
+    {
+      "name": "Front-End React",
       "budget": "15000",
       "category": {
         "id": "2",
@@ -9,21 +39,10 @@
       },
       "cost": 0,
       "services": [],
-      "id": 1
-    },
-    {
-      "name": "Front end",
-      "budget": "9090",
-      "category": {
-        "id": "2",
-        "name": "Infra"
-      },
-      "cost": 0,
-      "services": [],
       "id": 3
     },
     {
-      "name": "Site",
+      "name": "Site Web7",
       "budget": "3500",
       "category": {
         "id": "3",
