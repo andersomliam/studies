@@ -37,8 +37,27 @@
         "id": "2",
         "name": "Desenvolvimento"
       },
-      "cost": 0,
-      "services": [],
+      "cost": 1200,
+      "services": [
+        {
+          "name": "Contratar um design",
+          "cost": "1000",
+          "description": "Criação do layout e das imagens para o projeto",
+          "id": "9f8de4e3-e7e0-40dd-93f3-6eb44947e0ff"
+        },
+        {
+          "name": "Hospedagem",
+          "cost": "100",
+          "description": "Hospedagem da aplicação",
+          "id": "6d513cba-da59-4893-a5fd-a2a935be0c2a"
+        },
+        {
+          "name": "Hospedagem",
+          "cost": "100",
+          "description": "Hospedagem da aplicação",
+          "id": "6d513cba-da59-4893-a5fd-a2a935be0c2a"
+        }
+      ],
       "id": 3
     },
     {
@@ -48,9 +67,33 @@
         "id": "3",
         "name": "Design"
       },
+      "cost": 453,
+      "services": [
+        {
+          "name": "teste",
+          "cost": "132",
+          "description": "teste",
+          "id": "f7085786-7696-4edc-89e3-694c93ca9fc6"
+        },
+        {
+          "name": "Contratar um design",
+          "cost": "321",
+          "description": "Criação do layout e das imagens para o projeto",
+          "id": "271ba389-b6bc-40ac-821d-62c64571399b"
+        }
+      ],
+      "id": 5
+    },
+    {
+      "name": "Davi",
+      "budget": "3000",
+      "category": {
+        "id": "1",
+        "name": "Infra"
+      },
       "cost": 0,
       "services": [],
-      "id": 5
+      "id": 6
     }
   ],
   "categories": [

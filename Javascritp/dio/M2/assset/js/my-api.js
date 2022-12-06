@@ -21,4 +21,3 @@ fetch(url)
     title.innerHTML += `<h1 id="name">${pokemon.name}</h1>`
   })
   .catch((error) => console.error(error))
-

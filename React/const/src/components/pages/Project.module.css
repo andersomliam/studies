@@ -12,6 +12,7 @@ p {
     background-color: #222;
     color: #fb3;
     padding: .4em;
+    border-radius: 5px;
 }
 
 project_details span {

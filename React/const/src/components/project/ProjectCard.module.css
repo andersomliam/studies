@@ -12,6 +12,7 @@
      padding: .4em;
      margin-bottom: 1.3em;
      font-size: 1.3em;
+     border-radius: 5px;
  }
 
  .project_card p {
@@ -70,6 +71,7 @@
      padding: .6em 1em;
      border: none;
      border: 1px solid #222;
+     border-radius: 5px;
 
      cursor: pointer;
      transition: .3s;
