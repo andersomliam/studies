@@ -11,19 +11,19 @@
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
   <!-- <link rel="stylesheet" href="css.css" /> -->
-  <link rel="stylesheet" href="./assset/css/pokedex-details.css">
+  <link rel="stylesheet" href="./assets/css/pokedex-details.css">
 </head>
 
 <body>
 
   <div class="content">
-    <main>
+    <main id="header">
       <section class="icons">
         <span id="arrow" class="material-symbols-outlined"> arrow_back </span>
         <span id="heart" class="material-symbols-outlined"> favorite </span>
       </section>
-
-      <section class="title">
+      <!-- 
+      <section id="header" class="title">
         <div id="title">
           <h1 id="name">pikashu</h1>
           <p><span>electric</span> <span>electric</span></p>
@@ -31,13 +31,13 @@
 
         <div id="id">
           <span>#025</span>
-        </div>
-      </section>
+        </div> 
+      </section>-->
 
-      <picture class="image">
+      <!--  <picture id="image" class="image">
         <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/25.svg"
-          alt="" />
-      </picture>
+          alt="" /> 
+      </picture>-->
     </main>
 
     <section class="details">
@@ -50,8 +50,8 @@
         </ul>
       </nav>
 
-      <table>
-        <tr>
+      <table id="tab">
+        <!-- <tr>
           <td>species:</td>
           <td class="color-detail">pichu</td>
         </tr>
@@ -83,7 +83,7 @@
         <tr>
           <td>egg cycle</td>
           <td class="color-detail">gress</td>
-        </tr>
+        </tr> -->
       </table>
     </section>
 
@@ -92,7 +92,10 @@
     </footer>
   </div>
 
-  <script src="assset/js/my-api.js"></script>
+  <script src="assets/js/pokemon-models.js"></script>
+
+  <script src="assets/js/my-api.js"></script>
+
 
 </body>
 
